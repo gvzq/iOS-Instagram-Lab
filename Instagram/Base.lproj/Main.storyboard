@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZcX-Yo-ndl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Insta Most Popular-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramCell" rowHeight="395" id="EKt-Go-muU" customClass="InstagramViewCell" customModule="Instagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="395"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="395"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EKt-Go-muU" id="Nvy-BG-9U0">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="394"/>
@@ -53,6 +53,7 @@
                                             <outlet property="headerView" destination="h3m-tV-Qmn" id="wy0-ed-J3d"/>
                                             <outlet property="posterView" destination="EV6-vb-Afn" id="Ya6-xb-uiu"/>
                                             <outlet property="profileView" destination="siE-wT-i4M" id="KXZ-c8-XBc"/>
+                                            <segue destination="Uwo-Vu-yg5" kind="show" id="hgj-ar-fHb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -60,6 +61,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Insta Most Popular" id="Nin-A0-XFi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="DtH-Z7-CMk" id="mje-IV-mTJ"/>
@@ -67,7 +69,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287.5" y="309.5"/>
+            <point key="canvasLocation" x="740.5" y="308.5"/>
+        </scene>
+        <!--Zoom-->
+        <scene sceneID="Z5U-zx-8UT">
+            <objects>
+                <viewController id="Uwo-Vu-yg5" customClass="PhotoDetailsViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hF1-Ys-r10"/>
+                        <viewControllerLayoutGuide type="bottom" id="yqb-rP-3FU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kT9-KZ-JA7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-dw-OFy">
+                                <rect key="frame" x="67" y="232" width="240" height="204"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Em-rR-gwB">
+                                <rect key="frame" x="126" y="102" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zoom" id="DeX-4C-hsC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="instagramLabel" destination="0Em-rR-gwB" id="umg-jM-qHE"/>
+                        <outlet property="posterView" destination="yqC-dw-OFy" id="2IJ-j0-RvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xD2-hm-0hM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169.5" y="308.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d5A-up-ef4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZcX-Yo-ndl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZxY-7L-dkK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OD3-QP-BhJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tY-UG-jw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="309"/>
         </scene>
     </scenes>
 </document>
