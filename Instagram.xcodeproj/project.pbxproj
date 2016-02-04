@@ -14,6 +14,7 @@
 		E5711C221C599ACF0004335A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5711C211C599ACF0004335A /* Assets.xcassets */; };
 		E5711C251C599ACF0004335A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5711C231C599ACF0004335A /* LaunchScreen.storyboard */; };
 		E5711C2F1C59A8770004335A /* InstagramViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711C2E1C59A8770004335A /* InstagramViewCell.swift */; };
+		E5B6B0D81C62F30900207CBC /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6B0D71C62F30900207CBC /* PhotoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E5711C241C599ACF0004335A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5711C261C599ACF0004335A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5711C2E1C59A8770004335A /* InstagramViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewCell.swift; sourceTree = "<group>"; };
+		E5B6B0D71C62F30900207CBC /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E5711C211C599ACF0004335A /* Assets.xcassets */,
 				E5711C231C599ACF0004335A /* LaunchScreen.storyboard */,
 				E5711C261C599ACF0004335A /* Info.plist */,
+				E5B6B0D71C62F30900207CBC /* PhotoDetailsViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B6B0D81C62F30900207CBC /* PhotoDetailsViewController.swift in Sources */,
 				E5711C2F1C59A8770004335A /* InstagramViewCell.swift in Sources */,
 				E5711C1D1C599ACF0004335A /* ViewController.swift in Sources */,
 				E5711C1B1C599ACF0004335A /* AppDelegate.swift in Sources */,
