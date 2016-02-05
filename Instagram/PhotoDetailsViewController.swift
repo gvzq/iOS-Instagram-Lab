@@ -22,7 +22,7 @@ class PhotoDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         bannerView.adUnitID = "ca-app-pub-9883927867094729/4670122164"
         bannerView.rootViewController = self
         bannerView.loadRequest(GADRequest())

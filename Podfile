@@ -1,12 +1,15 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
+platform :ios, '9.2'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
 target 'Instagram' do
 
 pod 'AFNetworking'
+
+source 'https://github.com/CocoaPods/Specs.git'
 pod 'Google-Mobile-Ads-SDK'
+
 
 end
 
