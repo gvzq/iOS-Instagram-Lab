@@ -4,16 +4,19 @@
 
 **Instagram Lab 2.0** is a most popular instagram posts app using the [Instagram API](https://api.instagram.com).
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-- [ ] User can view a list of movies currently playing in theaters from The Movie Database.
-- [ ] Poster images are loaded using the UIImageView category in the AFNetworking library.
-- [ ] User sees a loading state while waiting for the movies API.
-- [ ] User can pull to refresh the movie list.
+- [x] Hook up the Instagram API.
+- [x] Build the Main Photo Feed.
+- [x] Add User Profile Images and Names
+- [x] Infinite Scrolling.
+- [ ] Add Pull to Refresh.
+- [ ] OP: Zoomable Photo View. 
+
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
