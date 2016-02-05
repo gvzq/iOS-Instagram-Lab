@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Insta Most Popular-->
@@ -84,45 +83,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-dw-OFy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-dw-OFy">
                                 <rect key="frame" x="67" y="232" width="240" height="204"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="204" id="Hrb-5X-1xB"/>
-                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Em-rR-gwB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Em-rR-gwB">
                                 <rect key="frame" x="126" y="102" width="123" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="123" id="Jr6-Lp-Jk7"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-cD-kRj" customClass="GADBannerView">
-                                <rect key="frame" x="27" y="591" width="320" height="50"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Jtg-Pu-eGg"/>
-                                    <constraint firstAttribute="width" constant="320" id="fV2-Xi-EvJ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yqC-dw-OFy" firstAttribute="centerX" secondItem="kT9-KZ-JA7" secondAttribute="centerX" id="3QL-WA-w5z"/>
-                            <constraint firstItem="yqb-rP-3FU" firstAttribute="top" secondItem="Znf-cD-kRj" secondAttribute="bottom" constant="26" id="FLJ-ih-eyf"/>
-                            <constraint firstItem="yqC-dw-OFy" firstAttribute="centerX" secondItem="0Em-rR-gwB" secondAttribute="centerX" id="GI3-Ba-ymq"/>
-                            <constraint firstItem="yqC-dw-OFy" firstAttribute="leading" secondItem="kT9-KZ-JA7" secondAttribute="leadingMargin" constant="51" id="Slh-QA-nWG"/>
-                            <constraint firstItem="0Em-rR-gwB" firstAttribute="top" secondItem="hF1-Ys-r10" secondAttribute="bottom" constant="38" id="YfR-IF-oy3"/>
-                            <constraint firstItem="yqC-dw-OFy" firstAttribute="centerY" secondItem="kT9-KZ-JA7" secondAttribute="centerY" id="ZDP-qY-EvO"/>
-                            <constraint firstItem="Znf-cD-kRj" firstAttribute="centerX" secondItem="yqC-dw-OFy" secondAttribute="centerX" id="dkW-Hf-hcO"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Zoom" id="DeX-4C-hsC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="bannerView" destination="Znf-cD-kRj" id="fa7-Kj-AtJ"/>
                         <outlet property="instagramLabel" destination="0Em-rR-gwB" id="umg-jM-qHE"/>
                         <outlet property="posterView" destination="yqC-dw-OFy" id="2IJ-j0-RvT"/>
                     </connections>

@@ -14,14 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - Google-Mobile-Ads-SDK (7.6.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - Google-Mobile-Ads-SDK
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  Google-Mobile-Ads-SDK: 0290020329c61183c4685304264b73382bc49fb4
 
 COCOAPODS: 0.39.0

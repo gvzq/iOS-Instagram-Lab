@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GoogleMobileAds
 
 class PhotoDetailsViewController: UIViewController {
 
@@ -16,16 +15,9 @@ class PhotoDetailsViewController: UIViewController {
 
     @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var instagramLabel: UILabel!
-    @IBOutlet weak var bannerView: GADBannerView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
-        bannerView.adUnitID = "ca-app-pub-9883927867094729/4670122164"
-        bannerView.rootViewController = self
-        bannerView.loadRequest(GADRequest())
         
         let poster = (vc["images"])!["low_resolution"]!!["url"]! as! String
         let title = (vc["user"])!["username"]! as! String

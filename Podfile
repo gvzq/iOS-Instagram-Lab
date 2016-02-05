@@ -6,7 +6,6 @@ use_frameworks!
 target 'Instagram' do
 
 pod 'AFNetworking'
-pod 'Google-Mobile-Ads-SDK'
 
 end
 

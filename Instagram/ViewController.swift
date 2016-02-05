@@ -34,11 +34,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let profileURL = NSURL(string: profile)
         cell.profileView.setImageWithURL(profileURL!)
         
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.clearColor()
-        cell.selectedBackgroundView = backgroundView
-
-        
         return cell
 
     }
